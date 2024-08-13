@@ -1,0 +1,14 @@
+{% extends 'base.html.njk' %}
+    {% block body %}
+        <h2>Hi {{name}}</h2>
+        
+        {% if compliments %}
+        <h3>You're so</h3>
+        <ul>
+            {% for compliment in compliments %}
+            <li>{{compliment}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endblock %}
+    
